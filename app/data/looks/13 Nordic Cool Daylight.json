@@ -1,0 +1,13 @@
+{
+ "_look": true,
+ "_description": "Crisp overcast daylight: cool neutral whites, clean shadows, honest colors.",
+ "look_on": true,
+ "lut_path": "data/looks/nordic_cool_daylight.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.1,
+ "temperature": -12,
+ "contrast": 1.02,
+ "texture_on": true,
+ "clarity": 0.12,
+ "grain_amount": 0.0
+}

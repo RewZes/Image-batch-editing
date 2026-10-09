@@ -1,0 +1,16 @@
+{
+ "_look": true,
+ "_description": "Dark, rich film look: crushed blacks, warm highlights, cool deep shadows, light grain.",
+ "look_on": true,
+ "lut_path": "data/looks/cinematic_warm_drama.cube",
+ "lut_strength": 0.9,
+ "exposure": -0.15,
+ "temperature": 8,
+ "contrast": 1.02,
+ "texture_on": true,
+ "clarity": 0.12,
+ "grain_amount": 0.3,
+ "grain_size": 1.1,
+ "grain_color": 0.2,
+ "grain_type": "film"
+}

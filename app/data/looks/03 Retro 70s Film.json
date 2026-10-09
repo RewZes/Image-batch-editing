@@ -1,0 +1,16 @@
+{
+ "_look": true,
+ "_description": "Faded film print: lifted blacks, warm yellow cast, greenish shadows, soft colors, visible grain.",
+ "look_on": true,
+ "lut_path": "data/looks/retro_70s_film.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.05,
+ "temperature": 12,
+ "saturation": 0.95,
+ "texture_on": true,
+ "clarity": -0.05,
+ "grain_amount": 0.65,
+ "grain_size": 1.5,
+ "grain_color": 0.35,
+ "grain_type": "film"
+}

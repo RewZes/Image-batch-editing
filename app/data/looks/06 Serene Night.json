@@ -1,0 +1,19 @@
+{
+ "_look": true,
+ "_description": "Calm night: dark blue sky, interior lamps glowing warm, soft haze around the lights.",
+ "look_on": true,
+ "lut_path": "data/looks/serene_night.cube",
+ "lut_strength": 0.85,
+ "exposure": 0.1,
+ "contrast": 1.02,
+ "atmo_on": true,
+ "tod_mode": "night",
+ "tod_amount": 1.0,
+ "tod_lights": 1.3,
+ "tod_sky": 1.0,
+ "tod_warmth": 0.3,
+ "fog_on": true,
+ "fog_density": 0.08,
+ "fog_start": 0.3,
+ "fog_glow": 0.4
+}

@@ -1,0 +1,113 @@
+{
+ "packs": [
+  {
+   "name": "RenderBatch_data_1.rbdata",
+   "size": 28281002,
+   "sha256": "117e9946bbd1567b8660e61adeac49813c2ec6cbd90f0331a9b5c860ba4b4aca",
+   "skip_if": "runtime/Lib/site-packages/numpy/random/_generator.cp312-win_amd64.pyd"
+  },
+  {
+   "name": "RenderBatch_data_2.rbdata",
+   "size": 28281426,
+   "sha256": "5979bd5bd6d6b3d0cae913378c5b379bb798bbc521d1c699e1494fba7d7d0239",
+   "skip_if": "runtime/Lib/site-packages/google/_upb/_message.pyd"
+  },
+  {
+   "name": "RenderBatch_data_3.rbdata",
+   "size": 28281628,
+   "sha256": "63030f4a41d9c7eba516dcbebc2ab093f1371a00297bf48cd535186b13722850",
+   "skip_if": "runtime/Lib/site-packages/PIL/_imaging.cp312-win_amd64.pyd"
+  },
+  {
+   "name": "RenderBatch_data_4.rbdata",
+   "size": 24462873,
+   "sha256": "58c6968b1c364b766f566f28d556a3caa0f5d4393a6e8c1781d13f9071b2dbf6",
+   "skip_if": "runtime/Lib/site-packages/PIL/AvifImagePlugin.py"
+  },
+  {
+   "name": "RenderBatch_ui_1.rbdata",
+   "size": 16491577,
+   "sha256": "60b4fb22ddf09b8a0b8e2719a153bd609086469376012ad87eb8bf361548f106",
+   "skip_if": "runtime/Lib/site-packages/PySide6/QtWidgets.pyd"
+  },
+  {
+   "name": "RenderBatch_converter_1.rbdata",
+   "size": 28107152,
+   "sha256": "a72edc73b2af92731c202a2962f247a45e6765d9764766a51f3cb78b05103a65",
+   "skip_if": "runtime/Lib/site-packages/torch/__init__.py",
+   "chunks": [
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk04",
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk01"
+   ],
+   "optional": true
+  },
+  {
+   "name": "RenderBatch_converter_2.rbdata",
+   "size": 28132318,
+   "sha256": "e0103336cdc399a6c3e07137866338794c012dde6d601b8f0abf0b0cc09092bf",
+   "skip_if": "runtime/Lib/site-packages/torch/__init__.py",
+   "chunks": [
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk02",
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk06"
+   ],
+   "optional": true
+  },
+  {
+   "name": "RenderBatch_converter_3.rbdata",
+   "size": 27975189,
+   "sha256": "51532480f1d20b9e6a7a69bf1a6cc4b2abb249328dac4f0e02123686d6b0d8d7",
+   "skip_if": "runtime/Lib/site-packages/torch/__init__.py",
+   "chunks": [
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk05",
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk07",
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk03"
+   ],
+   "optional": true
+  },
+  {
+   "name": "RenderBatch_converter_4.rbdata",
+   "size": 28173813,
+   "sha256": "4e97de78297a4522cc9d26dfbd206b9ea7021162c231791effa6fc1985742b97",
+   "skip_if": "runtime/Lib/site-packages/torch/__init__.py",
+   "chunks": [
+    "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk08"
+   ],
+   "optional": true
+  },
+  {
+   "name": "RenderBatch_converter_5.rbdata",
+   "size": 12349295,
+   "sha256": "73d2b2391f5b72fae7e25330ca96bdddc2b9dda8fdc4aa42b07138230f15a6da",
+   "skip_if": "runtime/Lib/site-packages/torch/__init__.py",
+   "chunks": [],
+   "optional": true
+  }
+ ],
+ "chunked": {
+  "models/SCUNet_denoise_PSNR_fp16.onnx": [
+   "models/SCUNet_denoise_PSNR_fp16.onnx.rbchunk01",
+   "models/SCUNet_denoise_PSNR_fp16.onnx.rbchunk02",
+   "models/SCUNet_denoise_PSNR_fp16.onnx.rbchunk03"
+  ],
+  "runtime/Lib/site-packages/cv2/cv2.pyd": [
+   "runtime/Lib/site-packages/cv2/cv2.pyd.rbchunk01",
+   "runtime/Lib/site-packages/cv2/cv2.pyd.rbchunk02",
+   "runtime/Lib/site-packages/cv2/cv2.pyd.rbchunk03"
+  ],
+  "runtime/Lib/site-packages/torch/lib/torch_cpu.dll": [
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk01",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk02",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk03",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk04",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk05",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk06",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk07",
+   "runtime/Lib/site-packages/torch/lib/torch_cpu.dll.rbchunk08"
+  ]
+ },
+ "base_urls": [
+  "https://raw.githubusercontent.com/RewZes/Image-batch-editing/main/data/",
+  "https://raw.githubusercontent.com/RewZes/Image-batch-editing/renderbatch/data/",
+  "https://raw.githubusercontent.com/RewZes/Image-batch-editing/f82997a8b1a721c4f75375cec66ff34cc8bb1dc3/data/"
+ ]
+}

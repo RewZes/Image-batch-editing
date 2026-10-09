@@ -1,0 +1,14 @@
+{
+ "_look": true,
+ "_description": "Gallery black & white: deep blacks, smooth highlights, a hint of warm tone and fine grain.",
+ "look_on": true,
+ "lut_path": "data/looks/fine_art_bw.cube",
+ "lut_strength": 1.0,
+ "contrast": 1.04,
+ "texture_on": true,
+ "clarity": 0.2,
+ "grain_amount": 0.3,
+ "grain_size": 0.9,
+ "grain_color": 0.0,
+ "grain_type": "film"
+}
