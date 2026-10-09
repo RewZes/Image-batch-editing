@@ -1,8 +1,10 @@
-RENDERBATCH 3.9.0
+RENDERBATCH 3.9.1
 ===============
 Batch post-processing for renders: denoise, mood / relight grading, color matching, upscale, sharpen.
 
 NEW IN 3.9 - EVERYTHING DOWNLOADS BY ITSELF
+  3.9.1: fixed the model conversion stopping at 80% on Windows (the converter's messages filled up
+    and blocked it). Models that were stuck convert again when the app starts.
   The installer is all you need: the Python packages and models (about 250 MB) are downloaded from the
     RenderBatch repository (github.com/RewZes/image-batch-editing) and checked before they're unpacked.
     A RenderBatch already on this PC is still offered first (quicker, keeps your settings).
