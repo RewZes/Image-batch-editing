@@ -37,7 +37,7 @@ from viewer import ImageViewer, np_to_qimage
 from lightmix_panel import LightMixPanel
 
 APP_NAME = "RenderBatch"
-VERSION = "3.9.0"
+VERSION = "3.9.1"
 if os.environ.get("RENDERBATCH_HOME"):
     APP_DIR = os.environ["RENDERBATCH_HOME"]
 elif getattr(sys, "frozen", False):
@@ -3479,7 +3479,11 @@ class MainWindow(QMainWindow):
 
         def work():
             try:
-                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                # the converter's warnings go to a file: an unread stderr pipe fills up (about 4 KB on Windows)
+                # and then blocks the converter for good
+                import tempfile
+                errf = tempfile.TemporaryFile(mode="w+", encoding="utf-8", errors="replace")
+                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=errf, stdin=subprocess.DEVNULL, text=True,
                                         encoding="utf-8", errors="replace", creationflags=flags)
                 self._conv_proc = proc
                 for line in proc.stdout:
@@ -3487,8 +3491,10 @@ class MainWindow(QMainWindow):
                         bus.convert.emit(json.loads(line))
                     except ValueError:
                         pass
-                err = proc.stderr.read()
                 proc.wait()
+                errf.seek(0)
+                err = errf.read()
+                errf.close()
                 if proc.returncode not in (0, None) and not self._conv_cancelled:
                     bus.convert.emit(dict(event="fatal", message="The model converter stopped unexpectedly "
                                                                  f"(code {proc.returncode}). It may have run out of memory.",

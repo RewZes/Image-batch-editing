@@ -1,8 +1,10 @@
-RENDERBATCH 3.9.0
+RENDERBATCH 3.9.1
 ===============
 Procesare în lot pentru randări: reducere zgomot, gradare de ambianță / reiluminare, potrivire culori, mărire rezoluție, claritate.
 
 NOU ÎN 3.9 - TOTUL SE DESCARCĂ SINGUR
+  3.9.1: reparată blocarea conversiei modelelor la 80% pe Windows (mesajele convertorului umpleau
+    canalul și îl blocau). Modelele blocate se convertesc din nou la pornirea aplicației.
   Installerul e tot ce-ți trebuie: pachetele Python și modelele (circa 250 MB) se descarcă din depozitul
     RenderBatch (github.com/RewZes/image-batch-editing) și se verifică înainte de despachetare. Dacă RenderBatch
     e deja pe PC, ți se propune întâi copierea din el (mai rapid, păstrează setările).

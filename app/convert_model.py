@@ -109,6 +109,10 @@ def convert(path, folder_kind, root):
     out_dir = os.path.join(root, kind)
     os.makedirs(out_dir, exist_ok=True)
     base = os.path.join(out_dir, name)
+    if not os.path.exists(base + ".json"):
+        for f in (base + ".onnx", base + "_fp16.onnx"):     # left over from an interrupted conversion
+            if os.path.exists(f):
+                os.remove(f)
     if os.path.exists(base + ".onnx") or os.path.exists(base + "_fp16.onnx"):
         base = os.path.join(out_dir, f"{name}_{int(time.time())}")
         name = os.path.basename(base)
@@ -167,6 +171,8 @@ def convert(path, folder_kind, root):
 
 
 def main():
+    import warnings
+    warnings.filterwarnings("ignore")      # export / fp16 warnings are expected and not useful to the user
     root = sys.argv[1]
     threads = int(sys.argv[2]) if len(sys.argv) > 2 else 2
     todo = pending(root)

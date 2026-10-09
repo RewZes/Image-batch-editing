@@ -6,7 +6,7 @@ GPU (DirectML) or the CPU.
 
 ## Install
 
-1. Download [`installer/RenderBatch_Setup_3.9.0.exe`](installer/RenderBatch_Setup_3.9.0.exe) and double-click it.
+1. Download [`installer/RenderBatch_Setup_3.9.1.exe`](installer/RenderBatch_Setup_3.9.1.exe) and double-click it.
    Windows may warn that the publisher is unknown (the app isn't code-signed): *More info → Run anyway*.
 2. Choose **Install on this PC** (Start menu + desktop shortcut, uninstall from Windows Settings › Apps) or
    **Portable** (everything in one folder you pick).
