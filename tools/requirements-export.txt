@@ -1,0 +1,7 @@
+# Only used during the build to convert the models to ONNX (tested versions)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.0
+spandrel==0.4.2
+onnx==1.23.0
+onnxconverter-common==1.16.0
+onnxruntime

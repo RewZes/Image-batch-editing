@@ -1,0 +1,6 @@
+numpy
+opencv-python-headless
+onnxruntime-directml
+pillow
+sv-ttk
+PySide6-Essentials

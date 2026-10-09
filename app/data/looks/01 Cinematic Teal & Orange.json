@@ -1,0 +1,16 @@
+{
+ "_look": true,
+ "_description": "Hollywood blockbuster grade: teal shadows, warm skin and highlights, deeper contrast, a touch of film grain.",
+ "look_on": true,
+ "lut_path": "data/looks/cinematic_teal_orange.cube",
+ "lut_strength": 0.85,
+ "exposure": -0.05,
+ "contrast": 1.04,
+ "saturation": 1.02,
+ "texture_on": true,
+ "clarity": 0.1,
+ "grain_amount": 0.25,
+ "grain_size": 1.0,
+ "grain_color": 0.2,
+ "grain_type": "film"
+}

@@ -1,0 +1,15 @@
+{
+ "_look": true,
+ "_description": "Classic portrait-film rendering: soft contrast, warm skin, yellow-leaning greens, fine grain.",
+ "look_on": true,
+ "lut_path": "data/looks/warm_film_stock.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.05,
+ "temperature": 6,
+ "texture_on": true,
+ "clarity": 0.0,
+ "grain_amount": 0.35,
+ "grain_size": 1.0,
+ "grain_color": 0.25,
+ "grain_type": "film"
+}

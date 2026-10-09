@@ -1,0 +1,33 @@
+RENDERBATCH - MODELS
+====================
+The app comes with SCUNet_denoise_PSNR and SPAN_2x_NomosUni already converted to ONNX. The other default
+models (SCUNet_denoise_GAN, 4x-UltraSharp) download from their authors' sites the first time the app runs,
+or when you pick them in the dropdown (download icon), and are converted automatically.
+Every model = <name>.onnx (+ optional <name>_fp16.onnx and <name>.json). Add or remove models
+there and restart the app; they appear in the Denoise / Upscale dropdowns.
+
+DENOISER (1x)   SCUNet_denoise_PSNR
+  Source: https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_psnr.pth
+  Blind real-noise denoiser, the faithful (PSNR) variant. Removes grain/fireflies
+  without inventing texture. Kai Zhang et al., MIT license.
+
+UPSCALER (2x)   SPAN_2x_NomosUni
+  Source: https://github.com/Phhofm/models/releases/tag/2xNomosUni_span_multijpg
+  Also:   https://openmodeldb.info/models/2x-NomosUni-span-multijpg
+  Fast universal 2x upscaler. Philip Hofmann, CC BY 4.0.
+
+DENOISER (1x)   SCUNet_denoise_GAN
+  Source: https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_gan.pth
+  Stronger denoise; may redraw very fine texture. Kai Zhang et al., MIT license.
+
+UPSCALER (4x)   4x-UltraSharp
+  Source: https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth
+  Page:   https://openmodeldb.info/models/4x-UltraSharp
+  Sharp ESRGAN upscaler by Kim2091. Listed as non-commercial: check the license before client work.
+
+ADDING OTHER MODELS
+  Any ONNX image model (NCHW, RGB, 0..1) works, e.g. ONNX downloads from openmodeldb.info.
+  .pth / .safetensors files dropped into models\denoise or models\upscale are converted by the app
+  (the converter downloads itself the first time it's needed). Good candidates:
+    - scunet_color_real_gan.pth (stronger denoise, may redraw fine texture)
+    - 2xNomosUni_compact_multijpg (fast), 2xNomosUni_esrgan_multijpg (sharper, slower)

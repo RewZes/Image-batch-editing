@@ -1,0 +1,17 @@
+{
+ "_look": true,
+ "_description": "Gentle morning light: hazy, pastel colors, lifted shadows, a little light haze.",
+ "look_on": true,
+ "lut_path": "data/looks/soft_pastel_morning.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.15,
+ "temperature": -4,
+ "tint": 3,
+ "atmo_on": true,
+ "tod_mode": "day",
+ "tod_amount": 0.35,
+ "fog_on": true,
+ "fog_density": 0.15,
+ "fog_start": 0.15,
+ "fog_glow": 0.45
+}

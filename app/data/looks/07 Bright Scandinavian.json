@@ -1,0 +1,13 @@
+{
+ "_look": true,
+ "_description": "Airy, light interior-magazine look: open shadows, soft contrast, cool clean whites, muted colors.",
+ "look_on": true,
+ "lut_path": "data/looks/bright_scandinavian.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.25,
+ "temperature": -6,
+ "contrast": 0.98,
+ "texture_on": true,
+ "clarity": 0.05,
+ "grain_amount": 0.0
+}

@@ -1,0 +1,16 @@
+{
+ "_look": true,
+ "_description": "Moody editorial: darker exposure, muted olive greens, warm highlights, strong shape.",
+ "look_on": true,
+ "lut_path": "data/looks/dark_moody.cube",
+ "lut_strength": 1.0,
+ "exposure": -0.3,
+ "temperature": 5,
+ "contrast": 1.04,
+ "texture_on": true,
+ "clarity": 0.15,
+ "grain_amount": 0.2,
+ "grain_size": 1.0,
+ "grain_color": 0.15,
+ "grain_type": "film"
+}

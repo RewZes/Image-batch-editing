@@ -1,0 +1,13 @@
+{
+ "_look": true,
+ "_description": "High-end hospitality look: warm midtones, rich woods and leathers, deep but open shadows.",
+ "look_on": true,
+ "lut_path": "data/looks/luxury_warm_interior.cube",
+ "lut_strength": 0.9,
+ "exposure": -0.05,
+ "temperature": 10,
+ "contrast": 1.03,
+ "texture_on": true,
+ "clarity": 0.12,
+ "grain_amount": 0.0
+}

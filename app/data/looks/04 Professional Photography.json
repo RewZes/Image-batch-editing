@@ -1,0 +1,13 @@
+{
+ "_look": true,
+ "_description": "Clean editorial grade used for magazine interiors: gentle S-curve, soft highlight roll-off, true colors, crisp detail.",
+ "look_on": true,
+ "lut_path": "data/looks/professional_clean.cube",
+ "lut_strength": 1.0,
+ "exposure": 0.05,
+ "contrast": 1.02,
+ "saturation": 1.02,
+ "texture_on": true,
+ "clarity": 0.18,
+ "grain_amount": 0.0
+}
